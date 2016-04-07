@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -24,17 +24,17 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\name{John}{Doe}
-\title{Resumé title}                               % optional, remove / comment the line if not wanted
-\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted
-\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
-\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-\email{john@doe.org}                               % optional, remove / comment the line if not wanted
-\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+\name{Nicolás A.}{Flores V.}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{Pje. República de Honduras 12273}{Las Condes, Santiago}{Chile}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(+569)~9719~86~89}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{(+562)~2214~50~86}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{nicolas.floresv@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -53,54 +53,69 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Education}
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\section{Formación Académica}
+  \cventry{2009--2015}{Ingeniero Civil en Ciencias de la Computación}{Universidad de los Andes}{Santiago}{}{}  % arguments 3 to 6 can be left empty
+  \cventry{2005--2008}{Educación Media}{Colegio Cumbres}{Santiago}{}{}
+  \cventry{1997--2004}{Educación Básica}{Colegio Cumbres}{Santiago}{}{}
 
-\section{Master thesis}
-\cvitem{title}{\emph{Title}}
-\cvitem{supervisors}{Supervisors}
-\cvitem{description}{Short thesis abstract}
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
 
-\section{Experience}
-\subsection{Vocational}
-\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
-Detailed achievements:%
-\begin{itemize}%
-\item Achievement 1;
-\item Achievement 2, with sub-achievements:
-  \begin{itemize}%
-  \item Sub-achievement (a);
-  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-    \begin{itemize}
-    \item Sub-sub-achievement i;
-    \item Sub-sub-achievement ii;
-    \item Sub-sub-achievement iii;
-    \end{itemize}
-  \item Sub-achievement (c);
-  \end{itemize}
-\item Achievement 3.
-\end{itemize}}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
-\subsection{Miscellaneous}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+\section{Experiencia Laboral}
+  \subsection{Vocacional}
+    \cventry{2014--2016}{Desarrollador Web}{AgendaPro}{http://www.agendapro.co}{Santiago}{Sistema de gestión y reservas en linea para peuqeñas y medianas empresas que presten servicios.\newline{}%
+      Desarrollo full-stack en Ruby on Rails utilizando jQuery y Twitter Bootstrap. Principales modulos desarrollados:%
+      \begin{itemize}%
+        \item \textit{Workflow} para poder tomar horas en linea, incluyendo vista de horas disponibles.
+        \item Multiples servicios para una misma reserva y optimizador de horas para encontrar el mejor momento para realizarlos.
+        \item Sistema de emails para notificar nuevas reservas y recordatorios.
+        \item Gestión de Clientes:
+          \begin{itemize}%
+            \item Vista e historial de reservas.
+            \item Filtros para buscar clientes.
+            \item Sistema de emails promocionales.
+          \end{itemize}
+        \item Sistema de busqueda de locales, servicios o prestadores.
+      \end{itemize}
+    }
+    \cventry{2012--2014}{Desarrollador Web}{ICCSolutions}{Santiago}{}{Fabrica de Softwares de la Universidad de los Andes\newline{}%
+      Desarrollo de distintos softwares a pedidos basados en Web2py:
+      \begin{description}
+        \item[FAI] Software para el control y gestión de recursos para el departamente de Investigación y Desarrollo.
+        \item[IngUandes] Página de cursos para la Facultad de Ingeniería y Ciencias aplicadas. Modulos desarrollados:
+          \begin{itemize}
+            \item Postulación, entrega de informe y evaluación de practicas.
+            \item Cartas al consejo.
+            \item Postulación a ayudantias.
+          \end{itemize}
+        \item[SAF] Adaptación de \textit{IngUandes} a otras facultades y desarrollo de nuevos modulos.
+      \end{description}
+    }
+  \subsection{Miscelaneos}
+    \cventry{2011--2013}{Ayudante Corrector}{Facultad de Ingeniería y Ciencias aplicadas}{Santiago}{}{Corrector de pruebas y trabajos del ramo Introducción a la Programación.}
+    \cventry{2013 Segundo Semestre}{Ayudante de Catedra}{Facultad de Ingeniería y Ciencias aplicadas}{Santiago}{}{Ayudante de catedra del ramo Introducción a la Programación.}
+    \cventry{2014 Primer Semestre}{Ayudante Corrector}{Facultad de Ingeniería y Ciencias aplicadas}{Santiago}{}{Corrector de pruebas y trabajos del ramo Tecnologías de la Web.}
+    \cventry{2009--2014}{Patrulla UAndes}{Departamento de Admisión y Promoción}{Universidad de los Andes}{Santiago}{Apoyo en la promoción de la Universidad de los Andes en diversas actividades realizadas para los futuros alumnos.}
 
-\section{Languages}
-\cvitemwithcomment{Language 1}{Skill level}{Comment}
-\cvitemwithcomment{Language 2}{Skill level}{Comment}
-\cvitemwithcomment{Language 3}{Skill level}{Comment}
+\section{Idiomas}
+  \cvitemwithcomment{Español}{Nativo}{}
+  \cvitemwithcomment{Ingles}{Nivel Medio}{Realización de cursos en ingles.\\Uso de aplicaciones en ingles.\\Afición propia derivada de la
+    Informática: lectura de grandes cantidades de texto en inglés en la Red.}
 
 \section{Computer skills}
-\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+  \cvdoubleitem{SO}{Gnu/Linux (Ubuntu, CentOS), Windows (98, 2000, XP, Vista, 7, 8, 10)}{Ofimática}{Microsoft Office (Word, PowerPoint, Excel, Access), OpenOffice, WPS}
+  \cvdoubleitem{Programación estructurada y OO}{Java, C/C++, C\#, Python, Ruby, Android}{Scripting}{PHP básico, Bash Scripting}
+  \cvdoubleitem{Diseño Web}{HTML, CSS, Sass, jQuery, JavaScript}{Base de Datos}{MySQL, PostgreSQL}
+  \cvdoubleitem{Utilidades}{Eclipse, SublimeTex, Eclipse, Android Studio, Net Beans, Inte, IntelliJ}{Maquetación}{\LaTeX}
 
 \section{Interests}
 \cvitem{hobby 1}{Description}
 \cvitem{hobby 2}{Description}
 \cvitem{hobby 3}{Description}
 
-\section{Extra 1}
+\section{Concursos Programación}
 \cvlistitem{Item 1}
 \cvlistitem{Item 2}
 \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
