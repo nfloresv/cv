@@ -10,8 +10,10 @@
 
 \usepackage{shared/mystyle}
 
-\spanishtrue  % for spanish version
-%\spanishfalse % for english version
+\bothcvtrue   % to print both version in the same file
+%\bothcvfalse  % to print only one version
+\spanishtrue  % for spanish version, ignored if bothcvtrue
+%\spanishfalse % for english version, ignored if bothcvtrue
 
 \input{shared/personal}
 
@@ -21,22 +23,18 @@
 \begin{document}
 \makecvtitle
 
-\ifspanish
-  \input{spanish/education}
-  \input{spanish/experience}
-  \input{spanish/languages}
-  \input{spanish/computer-skills}
-  \input{spanish/programing-context}
-  \input{spanish/interests}
+\ifbothcv
+  \input{_spanish}
+  \clearpage
+  \makecvtitle
+  \input{_english}
 \else
-  \input{english/education}
-  \input{english/experience}
-  \input{english/languages}
-  \input{english/computer-skills}
-  \input{english/programing-context}
-  \input{english/interests}
+  \ifspanish
+    \input{_spanish}
+  \else
+    \input{_english}
+  \fi
 \fi
-
 \end{document}
 
 %% end of file `spanish.tex'.
